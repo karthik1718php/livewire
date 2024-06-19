@@ -8,11 +8,10 @@ class UserController extends Controller
 {
     public function getData(){
 
+        
 
         $getPost = \DB::select('CALL get_posts');
        
-         dd($getPost);
-
-        return 'test User';
+        return config('constants.success');
     }
 }
